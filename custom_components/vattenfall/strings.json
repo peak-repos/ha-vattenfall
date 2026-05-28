@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Vattenfall",
+        "description": "Sign in with your Vattenfall Mina sidor (supplier) account.",
+        "data": {
+          "name": "Name",
+          "customer_id": "Customer ID",
+          "password": "Password"
+        }
+      },
+      "premise": {
+        "title": "Choose premise",
+        "description": "Multiple premises were found for this account. Choose the one to monitor.",
+        "data": {
+          "premise_id": "Premise"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Vattenfall",
+      "invalid_auth": "Invalid customer ID or password",
+      "no_premises": "No premises were returned for this account",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This premise is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "finalized_day": {
+        "name": "Last finalized day consumption"
+      },
+      "finalized_month_to_date": {
+        "name": "Month-to-date consumption (finalized)"
+      },
+      "finalized_average_daily": {
+        "name": "Average daily consumption (finalized)"
+      },
+      "latest_hour": {
+        "name": "Latest reported hour consumption"
+      },
+      "today_partial": {
+        "name": "Today's consumption so far (partial)"
+      },
+      "finalized_day_peak_hour": {
+        "name": "Last finalized day peak hour"
+      }
+    }
+  }
+}
